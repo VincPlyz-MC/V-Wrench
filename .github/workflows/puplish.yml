@@ -25,7 +25,7 @@ jobs:
         uses: cloudnode-pro/modrinth-publish@v2.3.2
         with:
           # Modrinth Token
-          token: ${{ secrets.MODRINTH_TOKEN }}
+          token: ${{ secrets.MODRINTH_TOKEN }} # todo: add modrinth token secret to github
 
           # Project ID
           project: ---- # todo: add project id

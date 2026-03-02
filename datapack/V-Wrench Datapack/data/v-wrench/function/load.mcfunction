@@ -1,5 +1,9 @@
 tellraw @p {"text":"V-Wrench:","color":"gold","extra":[{"text":" Datapack Loaded","color":"green"}]}
 
+
+data modify block 0 0 0 Items set value []
+data remove storage wrench:main block_id
+
 scoreboard objectives add v-wrench_global_debug_flag dummy
 execute unless score #v-wrench:debug_flag v-wrench_global_debug_flag matches 0..1 run scoreboard players set #v-wrench:debug_flag v-wrench_global_debug_flag 0
 

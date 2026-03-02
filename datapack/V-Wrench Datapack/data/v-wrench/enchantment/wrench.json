@@ -1,6 +1,6 @@
 {
   "description": {
-    "text": "Wrench Mode:",
+    "text": "Wrench",
     "color": "white"
   },
   "supported_items": "minecraft:music_disc_creator_music_box",

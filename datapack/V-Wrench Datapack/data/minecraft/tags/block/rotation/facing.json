@@ -1,0 +1,30 @@
+{
+  "values": [
+    "minecraft:observer",
+    "minecraft:dispenser",
+    "minecraft:dropper",
+    "minecraft:piston",
+    "minecraft:sticky_piston",
+    "minecraft:sticky_piston",
+    "minecraft:hopper",
+    "minecraft:end_rod",
+    "minecraft:lectern",
+    "minecraft:hopper",
+    "amethyst_cluster",
+    "minecraft:end_rod",
+    "large_amethyst_bud",
+    "small_amethyst_bud",
+    "medium_amethyst_bud",
+    "minecraft:barrel",
+    "#shulker_boxes",
+    "#minecraft:stairs",
+    "#minecraft:buttons",
+    "minecraft:anvil",
+    "minecraft:chipped_anvil",
+    "minecraft:damaged_anvil",
+    "#doors",
+    "#minecraft:lightning_rods",
+    "#minecraft:fence_gates",
+    "#minecraft:glazed_terracotta"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "values": [
+    "minecraft:observer",
+    "minecraft:dispenser",
+    "minecraft:dropper",
+    "minecraft:piston",
+    "minecraft:sticky_piston",
+    "minecraft:hopper",
+    "amethyst_cluster",
+    "large_amethyst_bud",
+    "small_amethyst_bud",
+    "medium_amethyst_bud",
+    "minecraft:end_rod",
+    "minecraft:barrel",
+    "#shulker_boxes",
+    "#minecraft:lightning_rods"
+  ]
+}

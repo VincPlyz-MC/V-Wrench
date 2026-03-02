@@ -1,0 +1,10 @@
+{
+  "values": [
+    "#minecraft:rotation/face",
+    "#minecraft:rotation/facing",
+    "#minecraft:rotation/half",
+    "#minecraft:rotation/orientation",
+    "#minecraft:rotation/rotation",
+    "#minecraft:rotation/up_down"
+  ]
+}
