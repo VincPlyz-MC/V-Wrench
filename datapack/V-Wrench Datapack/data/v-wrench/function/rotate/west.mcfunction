@@ -1,0 +1,1 @@
+execute if block ~ ~ ~ #facing[facing=west] run return run item modify entity @p weapon.mainhand v-wrench:facing/north
