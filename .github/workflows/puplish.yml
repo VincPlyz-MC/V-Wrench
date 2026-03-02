@@ -1,0 +1,60 @@
+
+name: Publish Datapack and Resource Pack
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Create Zips
+        run: |
+          # 1. Resource Pack erstellen
+          cd "resourcepack/V-Wrench Resourcepack" && zip -r "../../V-Wrench-ResourcePack.zip" . && cd ../..
+          
+          # 2. Datapack erstellen
+          cd "datapack/V-Wrench Datapack" && zip -r "../../V-Wrench-Datapack.zip" . && cd ../..
+
+      - name: Publish to Modrinth
+        uses: cloudnode-pro/modrinth-publish@v2.3.2
+        with:
+          # Modrinth Token
+          token: ${{ secrets.MODRINTH_TOKEN }}
+
+          # Project ID
+          project: ---- # todo: add project id
+
+          # The version number (from tag, e.g., v1.1)
+          version: "${{ github.ref_name }}"
+
+          # The title of the version on Modrinth
+          name: "V-Wrench ${{ github.ref_name }}"
+          
+          # 'release', 'beta', or 'alpha'
+          channel: alpha
+          
+          # List both files
+          files: |-
+            V-Wrench-Datapack.zip
+            V-Wrench-ResourcePack.zip
+          
+          # Define which file is which
+          # Format: filename=type
+          file-types: |-
+            V-Wrench-ResourcePack.zip=required-resource-pack
+          
+          # Sets the Datapack as the main download button
+          primary-file: "V-Wrench-Datapack.zip"
+
+          loaders: |-
+            minecraft
+            datapack
+            
+          game-versions: |-
+            26.1-snapshot-10
