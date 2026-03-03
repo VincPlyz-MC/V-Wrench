@@ -4,7 +4,9 @@ execute if score #v-wrench:debug_flag v-wrench_global_debug_flag matches 1 run t
 # Debug Block ID
 $execute if score #v-wrench:debug_flag v-wrench_global_debug_flag matches 1 run say $(block_id)
 
-playsound minecraft:block.vault.close_shutter master @s ~ ~ ~ 0.2 2
+
+# Play Wrench Rotate Sound
+function v-wrench:sounds/wrench_rotate
 
 # Nort, East, South, West
 $execute if block ~ ~ ~ #minecraft:rotation/orientation[orientation=north_up] run return run setblock ~ ~ ~ $(block_id)[orientation=east_up] replace
@@ -21,6 +23,7 @@ $execute if block ~ ~ ~ #minecraft:rotation/orientation[orientation=up_north] ru
 $execute if block ~ ~ ~ #minecraft:rotation/orientation[orientation=up_east] run return run setblock ~ ~ ~ $(block_id)[orientation=up_south] replace
 $execute if block ~ ~ ~ #minecraft:rotation/orientation[orientation=up_south] run return run setblock ~ ~ ~ $(block_id)[orientation=up_west] replace
 $execute if block ~ ~ ~ #minecraft:rotation/orientation[orientation=up_west] run return run setblock ~ ~ ~ $(block_id)[orientation=up_north] replace
+
 
 # Debug Fail
 execute if score #v-wrench:debug_flag v-wrench_global_debug_flag matches 1 run tellraw @p {"text":"orientation-nesw (rotate) function failed!","color":"red"}

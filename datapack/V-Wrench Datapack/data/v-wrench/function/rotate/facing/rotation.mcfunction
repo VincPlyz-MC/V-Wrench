@@ -4,7 +4,9 @@ execute if score #v-wrench:debug_flag v-wrench_global_debug_flag matches 1 run t
 # Debug Block ID
 $execute if score #v-wrench:debug_flag v-wrench_global_debug_flag matches 1 run say $(block_id)
 
-playsound minecraft:block.vault.close_shutter master @s ~ ~ ~ 0.2 2
+
+# Play Wrench Rotate Sound
+function v-wrench:sounds/wrench_rotate
 
 # Nort, East, South, West
 $execute if block ~ ~ ~ #minecraft:rotation/rotation[rotation=0] run return run setblock ~ ~ ~ $(block_id)[rotation=1] replace

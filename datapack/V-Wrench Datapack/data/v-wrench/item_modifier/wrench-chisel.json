@@ -1,0 +1,25 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:custom_data": {
+        "v-wrench": true,
+        "v-wrench:rotation": false,
+        "v-wrench:chisel": true
+      },
+      "minecraft:lore": [
+        {
+          "text": " "
+        },
+        {
+          "text": "-> Rotate",
+          "color": "#07ca52"
+        },
+        {
+          "text": "- Chisel",
+          "color": "#4d4a4a"
+        }
+      ]
+    }
+  }
+]

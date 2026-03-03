@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "equipment",
   "pattern": [
     " II",
     " PI",
@@ -41,8 +42,24 @@
         "v-wrench:wrench": 1
       },
       "minecraft:custom_data": {
-        "v-wrench": true
-      }
+        "v-wrench": true,
+        "v-wrench:rotation": true,
+        "v-wrench:chisel": false
+      },
+      "minecraft:lore": [
+        {
+          "text": " "
+        },
+        {
+          "text": "- Rotate",
+          "color": "#07ca52"
+        },
+        {
+          "text": "- Chisel",
+          "color": "#4d4a4a"
+        }
+      ],
+      "minecraft:item_model": "v-wrench:wrench_rotate"
     }
   }
 }

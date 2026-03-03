@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "wrench": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": {
+          "periodic_tick": 5
+        },
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "v-wrench": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "v-wrench:wrench/switch_mode"
+  }
+}

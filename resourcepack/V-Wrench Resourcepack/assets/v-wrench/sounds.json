@@ -1,0 +1,9 @@
+{
+  "wrench_switch": {
+    "sounds": [
+      {
+        "name": "v-wrench:custom/wrench_switch"
+      }
+    ]
+  }
+}

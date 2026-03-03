@@ -1,3 +1,7 @@
+# Play Wrench Rotate Sound
+function v-wrench:sounds/wrench_rotate
+
+
 execute if block ~ ~ ~ minecraft:white_wall_banner[facing=north] run return run setblock ~ ~ ~ minecraft:white_wall_banner[facing=east] replace
 execute if block ~ ~ ~ minecraft:white_wall_banner[facing=east] run return run setblock ~ ~ ~ minecraft:white_wall_banner[facing=south] replace
 execute if block ~ ~ ~ minecraft:white_wall_banner[facing=south] run return run setblock ~ ~ ~ minecraft:white_wall_banner[facing=west] replace

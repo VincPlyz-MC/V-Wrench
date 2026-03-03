@@ -1,3 +1,7 @@
+# Play Wrench Rotate Sound
+function v-wrench:sounds/wrench_rotate
+
+
 execute if block ~ ~ ~ minecraft:player_wall_head[facing=north] run return run setblock ~ ~ ~ minecraft:player_wall_head[facing=east] replace
 execute if block ~ ~ ~ minecraft:player_wall_head[facing=east] run return run setblock ~ ~ ~ minecraft:player_wall_head[facing=south] replace
 execute if block ~ ~ ~ minecraft:player_wall_head[facing=south] run return run setblock ~ ~ ~ minecraft:player_wall_head[facing=west] replace

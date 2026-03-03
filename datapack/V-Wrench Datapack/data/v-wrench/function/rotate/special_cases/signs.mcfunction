@@ -1,3 +1,7 @@
+# Play Wrench Rotate Sound
+function v-wrench:sounds/wrench_rotate
+
+
 execute if block ~ ~ ~ minecraft:oak_wall_sign[facing=north] run return run setblock ~ ~ ~ minecraft:oak_wall_sign[facing=east] replace
 execute if block ~ ~ ~ minecraft:oak_wall_sign[facing=east] run return run setblock ~ ~ ~ minecraft:oak_wall_sign[facing=south] replace
 execute if block ~ ~ ~ minecraft:oak_wall_sign[facing=south] run return run setblock ~ ~ ~ minecraft:oak_wall_sign[facing=west] replace
